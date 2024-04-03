@@ -40,7 +40,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Planned retirement age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="din-jL-hX4">
-                                <rect key="frame" x="20" y="132" width="353" height="40"/>
+                                <rect key="frame" x="20" y="124" width="353" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="7cU-Se-goq"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="ihY-tQ-4vg"/>
@@ -48,23 +48,75 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Monthly investment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jQO-SF-0mZ">
+                                <rect key="frame" x="20" y="172" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="KBh-XT-gbA"/>
+                                    <constraint firstAttribute="height" constant="40" id="dVy-F7-Hfq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Current savings" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yQc-oJ-161">
+                                <rect key="frame" x="20" y="220" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="OBg-q4-29d"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="iJn-xG-DAp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Interest rate" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bpr-AM-Seh">
+                                <rect key="frame" x="20" y="268" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ipf-bf-Uk9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="y3a-Pb-dNc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill the form" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="lZG-ia-kDw">
+                                <rect key="frame" x="20" y="480" width="353" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="GQx-MR-mid"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lZG-ia-kDw" secondAttribute="trailing" constant="20" id="0gk-5j-AHO"/>
+                            <constraint firstItem="jQO-SF-0mZ" firstAttribute="trailing" secondItem="din-jL-hX4" secondAttribute="trailing" id="4Sq-Yz-wvr"/>
+                            <constraint firstItem="yQc-oJ-161" firstAttribute="trailing" secondItem="jQO-SF-0mZ" secondAttribute="trailing" id="65t-JG-vF6"/>
+                            <constraint firstItem="bpr-AM-Seh" firstAttribute="trailing" secondItem="yQc-oJ-161" secondAttribute="trailing" id="9FW-SD-JOj"/>
+                            <constraint firstItem="lZG-ia-kDw" firstAttribute="top" secondItem="Xe4-Pp-1nP" secondAttribute="bottom" constant="30" id="BWr-Gv-0eC"/>
                             <constraint firstItem="din-jL-hX4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CK5-n4-XlJ"/>
+                            <constraint firstItem="jQO-SF-0mZ" firstAttribute="top" secondItem="din-jL-hX4" secondAttribute="bottom" constant="8" id="IQp-7f-LEQ"/>
                             <constraint firstItem="XkZ-tu-QEp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="JAo-Fh-a8b"/>
-                            <constraint firstItem="din-jL-hX4" firstAttribute="top" secondItem="XkZ-tu-QEp" secondAttribute="bottom" constant="18" id="Tt7-a9-Ddt"/>
+                            <constraint firstItem="bpr-AM-Seh" firstAttribute="leading" secondItem="yQc-oJ-161" secondAttribute="leading" id="PfV-2h-0MP"/>
+                            <constraint firstItem="din-jL-hX4" firstAttribute="top" secondItem="XkZ-tu-QEp" secondAttribute="bottom" constant="10" id="Tt7-a9-Ddt"/>
+                            <constraint firstItem="yQc-oJ-161" firstAttribute="top" secondItem="jQO-SF-0mZ" secondAttribute="bottom" constant="8" id="UXt-3n-yUX"/>
                             <constraint firstItem="Xe4-Pp-1nP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VgG-Wv-nhL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="din-jL-hX4" secondAttribute="trailing" constant="20" id="Y8r-wT-mXa"/>
+                            <constraint firstItem="lZG-ia-kDw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aAb-mK-HRZ"/>
                             <constraint firstItem="Xe4-Pp-1nP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jN7-uN-yJI"/>
+                            <constraint firstItem="jQO-SF-0mZ" firstAttribute="leading" secondItem="din-jL-hX4" secondAttribute="leading" id="pDc-cN-1Jj"/>
+                            <constraint firstItem="bpr-AM-Seh" firstAttribute="top" secondItem="yQc-oJ-161" secondAttribute="bottom" constant="8" id="qJH-MZ-oXk"/>
+                            <constraint firstItem="yQc-oJ-161" firstAttribute="leading" secondItem="jQO-SF-0mZ" secondAttribute="leading" id="uoH-Wz-gU6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XkZ-tu-QEp" secondAttribute="trailing" constant="20" id="vek-rg-xwR"/>
                             <constraint firstItem="XkZ-tu-QEp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xlf-3w-TLF"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="age" destination="XkZ-tu-QEp" id="vKR-xL-8mX"/>
-                        <outlet property="retirementAge" destination="din-jL-hX4" id="Hcv-Og-Gj0"/>
+                        <outlet property="ageField" destination="XkZ-tu-QEp" id="c2j-QJ-G13"/>
+                        <outlet property="currentSavingsField" destination="yQc-oJ-161" id="bk4-RV-JvV"/>
+                        <outlet property="interestRateField" destination="bpr-AM-Seh" id="gvn-JO-3y4"/>
+                        <outlet property="mainLabel" destination="lZG-ia-kDw" id="Nr5-Uq-LLD"/>
+                        <outlet property="monthlyInvestmentField" destination="jQO-SF-0mZ" id="tW1-bb-UHd"/>
+                        <outlet property="retirementAgeField" destination="din-jL-hX4" id="BYe-J6-M05"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

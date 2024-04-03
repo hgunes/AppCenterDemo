@@ -12,8 +12,12 @@ import AppCenterAnalytics
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var age: UITextField!
-    @IBOutlet weak var retirementAge: UITextField!
+    @IBOutlet weak var ageField: UITextField!
+    @IBOutlet weak var retirementAgeField: UITextField!
+    @IBOutlet weak var monthlyInvestmentField: UITextField!
+    @IBOutlet weak var currentSavingsField: UITextField!
+    @IBOutlet weak var interestRateField: UITextField!
+    @IBOutlet weak var mainLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +37,13 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: UIButton) {
 //        Crashes.generateTestCrash()
         
-        let currentAge: Int? = Int(age.text!)
-        let plannedRetirementAge: Int? = Int(retirementAge.text!)
+        let currentAge: Int? = Int(ageField.text!)
+        let plannedRetirementAge: Int? = Int(retirementAgeField.text!)
+        let monthlyInvestment: Float? = Float(monthlyInvestmentField.text!)
+        let currentSavings: Float? = Float(currentSavingsField.text!)
+        let interestRate: Float? = Float(interestRateField.text!)
+        
+        mainLabel.text = "If you save $\(monthlyInvestment!) every month for \(plannedRetirementAge! - currentAge!) years, and invest money plus your current investment of \(currentSavings!) at a \(interestRate!)% annual interes rate, you will have $X by the time you are \(plannedRetirementAge!)."
         
         let properties: [String: String]? = ["current age" : "\(String(currentAge!))",
                                              "retirement age" : "\(String(plannedRetirementAge!))"]
